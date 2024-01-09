@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.deanssystem.controllers.ShowStudentController" spacing="15" >
+
+    <TextField fx:id="searchField" promptText="Wyszukaj studenta..."/>
+
+    <TableView fx:id="studentsTable" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idColumn" text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="nameColumn" text="Imię">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="lastNameColumn" text="Nazwisko">
+                <cellValueFactory>
+                    <PropertyValueFactory property="lastName"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="fieldOfStudyColumn" text="Kierunek">
+                <cellValueFactory>
+                    <PropertyValueFactory property="fieldOfStudy"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn fx:id="yearOfStartColumn" text="Rok rozpoczęcia">
+                <cellValueFactory>
+                    <PropertyValueFactory property="yearOfStart"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</VBox>

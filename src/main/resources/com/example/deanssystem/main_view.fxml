@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.deanssystem.controllers.MainViewController">
+    <ToolBar>
+        <Button fx:id="addStudentButton" onAction="#onAddStudentMenuClick">
+            <graphic>
+                <ImageView fitHeight="24" fitWidth="24">
+<!--                    <Image url="@/icons/add_student_icon.png" />-->
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="showStudentButton" onAction="#onShowStudentsMenuClick">
+            <graphic>
+                <ImageView fitHeight="24" fitWidth="24">
+<!--                    <Image url="@/icons/show_students_icon.png" />-->
+                </ImageView>
+            </graphic>
+        </Button>
+    </ToolBar>
+    <AnchorPane fx:id="contentPane"/>
+</VBox>
